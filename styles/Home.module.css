@@ -1,6 +1,6 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,8 +58,9 @@
 }
 
 .description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+  padding:0;
+  margin:0;
+  font-size: 2rem;
 }
 
 .code {
@@ -111,7 +112,8 @@
 }
 
 .logo {
-  height: 1em;
+  height: 2em;
+  vertical-align: middle;
 }
 
 @media (max-width: 600px) {

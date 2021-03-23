@@ -1,53 +1,21 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import TemplateComponent from '../components/TemplateComponent'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Bean.</title>
+        <link rel="icon" href="/bean.png" />
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVqQ9aFyVkLoxJmq4z8EBDJ3ahmb1C3yc&libraries=geometry,places"></script>
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          How Far Are You From The <img src="/bean.png" style={{verticalAlign: 'middle', height:'2em', width:'2em' }} />?
         </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <TemplateComponent />
       </main>
 
       <footer className={styles.footer}>
@@ -57,7 +25,7 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
+          <img src="/fiveable.png" alt="Fiveable Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
