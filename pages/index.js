@@ -19,14 +19,13 @@ export default function Home() {
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/fiveable.png" alt="Fiveable Logo" className={styles.logo} />
-        </a>
+          <div>
+            Powered by
+            <a href="http://fiveable.me" target="_blank"><img src="/fiveable.png" alt="Fiveable Logo" className={styles.logo} /></a>
+          </div>
+          <div className={styles.footerInfo}>
+            Created with ❤️ by {' '}<a target="_blank" href="http://dylanblack.dev">Dylan Black</a> for Fiveable's {' '}<a target="_blank" href="http://open.fiveable.me">open-source initiative</a>
+          </div>
       </footer>
     </div>
   )
